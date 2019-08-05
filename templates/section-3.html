@@ -1,0 +1,22 @@
+<div class="section-3-container container-fluid py-1 py-md-2 py-xl-4">
+  <div class="section-3 h-100 row  align-content-center my-4 my-md-5">
+    <div class="col-md-6 col-lg-6 col-12 container">
+      <div class="row justify-content-center">
+        <div class="section-3-title">
+          Prenez Votre Visa et <span>Explorer <br>Le Monde
+            <button class="section-3-button modal-trigger d-md-none" modal="visa-modal" endpoint='{% url "visa_demand" %}' >
+              Reserver Maintenant
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-6 col-12 container d-none d-md-block">
+      <div class="row h-100 justify-content-center align-content-center">
+        <button class="section-3-button modal-trigger" modal="visa-modal" endpoint='{% url "visa_demand" %}' >
+          Reserver Maintenant
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

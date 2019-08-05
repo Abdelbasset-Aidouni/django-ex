@@ -1,0 +1,39 @@
+<div class="testimonials-container container-fluid">
+      <h1 class="testimonials-title text-center">Témoignages</h1>
+      <div class="row justify-content-around testimonials-carousel col-10 mx-auto">
+
+
+        {% for feedback in feedbacks %}
+
+
+          <div class="testimonials   col-10 col-sm-10 col-md-6  col-lg-4 col-xl-3 my-3">
+            <div class="testimonial-container container mx-2">
+              <div class="row justify-content-around">
+                <!--<img class="testimonial-img" src="{{feedback.image.url}}" alt="">-->
+                <div class="testimonial-img ml-auto" style="background:url({{feedback.image.url}}) no-repeat 50% 50%;background-size:cover;">
+                  
+                </div>
+                
+                <div class="personal-info container col-8 mr-auto">
+                  <div class="row h-100 align-content-center">
+                    <h3 class="person-name text-capitalize w-100">{{feedback.username}}</h3>
+                    <p class="person-badge">{{feedback.client_badge}}</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials-content-container row justify-content-center" style="background-image:url('/media/UI elements/SVGs/left-quote.svg'),url('/media/UI elements/SVGs/right-quote.svg')">
+                <div class="testimonial-content">
+                  {{feedback.feedback}}
+                </div>
+              </div>
+              </div>
+            
+            
+          </div>
+
+
+        {% endfor %}
+
+      </div>
+    </div>

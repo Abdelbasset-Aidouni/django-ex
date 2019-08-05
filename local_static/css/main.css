@@ -1,0 +1,1255 @@
+
+
+ a:hover{
+	text-decoration: none;
+}
+
+input{
+	color: #252525;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+input[type=number] { 
+      -moz-appearance: textfield;
+      appearance: textfield;
+      margin: 0; 
+    }
+
+/*.header{
+	height: 150px;
+
+}*/
+.header  {
+	height: 90px;
+}
+.contact-info-container{
+/*height: 90px;*/
+display: none;
+}
+/*.contact-container{
+	margin-left: 0;
+}*/
+.location-container{
+	margin-left: 0;
+}
+.logo-container{
+	
+	
+}
+.logo{
+	background-image: url("./biban tours.png");
+	background-size: contain;
+	/*width: 180px;*/
+	/*height: 90px;*/
+	background-repeat: no-repeat;
+	
+}
+
+.icon-1{
+	background-image: url("/media/UI elements/SVGs/Component 2.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 30px;
+	height: 35px;
+	margin-right: 10px;
+	padding: 0;
+	
+}
+.icon-2{
+	background-image: url("/media/UI elements/SVGs/Component.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 40px;
+	height: 45px;
+	margin-right: 10px;
+
+}
+.info-1, .info-2{
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+}
+.info-1 p , .info-2 p{
+	line-height: 1;
+	margin:2px;
+	padding: 0;
+	color: rgba(78, 78, 80, 0.62);
+
+}
+.info-2 p{
+	margin: 0;
+	line-height: 2;
+}
+
+.contact-info .button-wrapper a , .mobile-button a{
+	border: solid #FF761B .5px;
+	color: #FF761B;
+	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
+	background: transparent;
+	cursor: pointer;
+	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s; 
+}
+.contact-info .button-wrapper a:hover , .mobile-button a:hover{
+	
+	color: white;
+	background: #FF761B;
+	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s; 
+}
+
+
+/*-------------------------NavBar----------------------------*/
+
+.navigation-bar.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+  
+}
+
+.navigation-bar{
+	z-index:1 ;
+	min-height: 70px;
+	position: sticky;
+	top: 0%;
+	background: rgba(158, 158, 158, .12);
+	
+}
+.navigation-bar .nav{
+	margin-left: 30px;
+	height: 100%;
+	
+}
+
+.navigation-bar .nav li a{
+	font-size: 24px;
+	
+	color: rgba(0,0,0,100);
+	text-transform: uppercase;
+	font-weight: 400;
+	
+}
+/*.navigation-bar ul{
+	display: none;
+}*/
+.search-input{
+	right: 0;
+}
+.search-btn{
+	background-color: transparent;
+	border:none;
+	transition: all .5s;
+}
+.search-btn:hover{
+	transition: all .5s;
+	filter: brightness(0) saturate(100%) invert(12%) sepia(5%) saturate(5290%) hue-rotate(171deg) brightness(98%) contrast(84%);
+}
+.search-input{
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+.navigation-bar .search-input:focus{
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+.navigation-bar .nav-logo{
+	background-image:url('./biban tours.png');
+	background-size: contain;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width:80px;
+	height:40px; 
+}
+
+
+
+/*------------------Landing-----------------------*/
+
+
+.landing{
+	height: 550px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	opacity: .8;
+	background-position: 50% 50%;
+	position: relative;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+}
+.landing-title{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+}
+.landing-title h1{
+	color:white;
+}
+.landing-title:nth-child(1){
+
+}
+.landing-title .part-2{
+	font-family: 'Oswald';
+	font-size:55px;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+.landing-button{
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+}
+.landing-button a{
+	padding: 5px 15px 5px 15px;
+	border: solid white .5px;
+	border-radius: 5px;
+	color: white;
+	
+	background:rgba(0,0,0,.6);
+	font-size: 29px;
+	font-family: 'Oswald';
+	font-weight: 100;
+	letter-spacing: 3px;
+	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s;
+}
+.landing-button a:hover{
+	text-decoration: none;
+	color: black;
+	background: white;
+	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section-1{
+	
+	min-height: 300px;
+	
+}
+.section-icons{
+	width: 65px;
+	height: 70px;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+}
+/*.section-icon-1{
+	
+	width: 65px;
+	height: 70px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.section-icon-2{
+	
+	width: 65px;
+	height: 70px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.section-icon-3{
+	
+	width: 85px;
+	height: 70px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 90%;	
+	
+}*/
+
+
+.section-content{
+	padding: 20px 15% 20px 15%;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Oxygen';
+	color: rgba(0,0,0,.4);
+
+
+}
+
+.section-title{
+	font-family: 'Oswald';
+	font-size: 30px;
+	font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------TravelShowcase-------------------------*/
+
+
+.travel-showcase{
+	background:rgba(158, 158, 158, .12);
+	min-height: 800px;
+	margin-bottom: 0;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+}
+
+/*.travel-showcase .col-md-2{
+	flex-basis: 20%;
+	max-width: 20%;
+}*/
+
+.travel-showcase-title{
+	font-family: 'Oswald';
+	font-size: 36px;
+	font-weight: 100;
+}
+
+
+
+/*#tour-1{
+	background: url("../../../UI elements/tour-1.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}
+#tour-2{
+	background: url("../../../UI elements/tour-2.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}
+#tour-3{
+	background: url("../../../UI elements/tour-3.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}
+#tour-4{
+	background: url("../../../UI elements/tour-4.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}
+#tour-5{
+	background: url("../../../UI elements/tour-5.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}
+#tour-6{
+	background: url("../../../UI elements/tour-6.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}
+#tour-7{
+	background: url("../../../UI elements/tour-7.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}
+#tour-8{
+	background: url("../../../UI elements/tour-8.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}*/
+.tours{
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	
+	border-radius: 20px;
+	height: 180px;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s; 
+}
+.tours button{
+	z-index: 1000;
+	position: absolute;
+	font-family: 'Oswald';
+	top: 50%;
+  	left: 50%;
+  	width: 60%;
+  	background-color: transparent;
+	padding: 5px 5px 5px 5px;
+	border:solid black .4px;
+	border-radius: 5px;
+	font-size: 17px;
+	font-weight: 100;
+	display: none;
+	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s; 
+}
+.tours button:hover{
+	background-color: black;
+	color: white;
+	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s; 
+}
+.tours:hover{
+
+	opacity: 0.5;
+	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s; 
+}
+.tours:hover button{
+	
+	display: block;
+	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s; 
+}
+
+
+.tour-container{
+	position: relative;
+}
+
+
+.tours .info-container{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	border-radius: 20px;
+	bottom: 0;
+	height: 30%;
+	background: linear-gradient(0deg, #000000 14.56%, rgba(2, 2, 2, 0) 100%);
+}
+
+.info-container .travel-info-container{
+	position: absolute;
+	bottom: 10%;
+	color: white;
+	width: 100%;
+
+
+}
+
+.travel-info-container .city-name{
+	position: absolute;
+	left: 5%;
+	bottom: 0%;
+	font-size: 18px;
+	font-weight: 100;
+	font-family: 'Oxygen';
+}
+.travel-info-container .price{
+	position: absolute;
+	bottom: 0%;
+	right: 10%;
+}
+
+
+
+/*--------------------------Section-2-----------------------*/
+
+
+
+.section-2{
+	min-height: 500px;
+	background: url("../../../UI elements/section-2.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	margin-top: -100px;
+	position: relative;
+	
+
+	clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+}
+.section-2 .section-2-content{
+	position: absolute;
+	top: 20%;
+	height: 70%;
+}
+
+
+.section-2 .section-2-title{
+	font-family: 'Oswald';
+	font-weight: 100;
+	font-size: 50px;
+	letter-spacing: 3px;
+	margin-bottom: 0;
+
+	color: white;
+}
+.section-2 .description{
+	
+	font-family: 'Oxygen';
+	font-weight: 100;
+	font-size: 26px;
+	letter-spacing: 3px;
+	text-align: center;
+	line-height: 1;
+	color: rgba(250,250,250,0.7);
+}
+.section-2 .button-wrapper a{
+	background: transparent;
+	padding: 5px 5% 5px 5%;
+	border:solid white 1px;
+	border-radius: 5px;
+	font-size: 30px;
+	font-weight: 100;
+	letter-spacing: 3px;
+	color: white;
+	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s; 
+}
+.section-2 .button-wrapper a:hover{
+	text-decoration: none;
+	color: black;
+	background: white;
+	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s; 
+}
+
+
+
+
+/*----------------------Offers-Section--------------------*/
+
+
+.offers{
+	/*height: 400px;B*/
+}
+
+.offers:nth-child(3n+1){
+	background:rgba(158, 158, 158, .12);
+}
+
+.offers .offer-title{
+	font-family: 'Oswald';
+	font-weight: 100;
+	font-size: 30px;
+	letter-spacing: 2px;
+
+}
+
+
+
+.offers-section-container .offers .offer-icon{
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 60px;
+	height: 60px;
+	/*margin:5% 0 2% 0;*/
+}
+/*.offer-icon:nth-child(3){
+	
+	background-size: 150% 150%;
+	background-position: 50% 50%;*/
+}
+.offers .offer-desc{
+	font-family: 'Oxygen';
+	font-size: 20px;
+	font-weight: 200;
+	margin: 5% 0 5% 0;
+	color: rgba(0,0,0,.7);
+}
+
+.offers-section-title{
+	font-family: 'Oswald';
+	font-size: 45px;
+	font-weight: 100;
+	letter-spacing: 2px;
+	margin: 5% 0 5% 0;
+}
+
+
+/*-----------------------testimonials----------------------*/
+
+.testimonials-container{
+	margin: 5% 0 5% 0;
+}
+
+.testimonials-title{
+	font-family: 'Oswald';
+	font-size: 40px;
+	font-weight: 100;
+	margin-bottom: 5%;
+}
+
+.testimonials{
+	min-height: 250px;
+}
+
+.testimonial-img{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+
+.testimonials .personal-info{
+	flex-basis: 60%;
+	max-width: 60%;
+}
+.testimonials .person-name{
+	font-family: 'Oswald';
+	font-weight: 100;
+	font-size: 22px;
+
+}
+.testimonials .person-badge{
+	color: rgba(0,0,0,.7);
+	font-size: 14px;
+}
+.testimonials-content-container{
+	width: 100%;
+
+	
+	background-repeat: no-repeat,no-repeat;
+	background-position: -10% -5%,105% 110%;
+	background-size: 30% 30%,30% 30%; 
+
+}
+.testimonial-content{
+	width: 70%;
+	font-family: 'Oxygen';
+	font-size: 14px;
+	padding: 5% 2% 10% 2%;
+	
+	/*letter-spacing: 1.2px;*/
+	color: rgba(0,0,0,.7);
+}
+
+/*.testimonials-carousel{
+	width: 80% !important;
+}*/
+
+
+/*--------------------------section-3------------------------*/
+
+
+.section-3-container{
+	position: relative;
+	
+	background-image: url("/media/UI elements/section-3.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 80%;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+	font-family: 'Oswald';
+}
+
+
+.section-3-title{
+
+	text-transform: lowercase;
+	font-size: 45px;
+	font-weight: 100;
+	
+}
+.section-3-title span{
+	font-weight: 400;
+}
+
+.section-3-button{
+	
+	background: transparent;
+	border:solid white 1px;
+	border-radius: 5px;
+	font-family: 'Oswald';
+	font-size: 30px;
+	font-weight:100;
+	color: white;
+	padding: 5px 15px 5px 15px;
+	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s;
+}
+.section-3-button:hover{
+	
+	color: black;
+	background: white;
+	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s; 
+}
+
+
+
+
+
+/*-----------------------contact-form------------------------*/
+
+.contact-form-title{
+	clip-path: polygon(0 0, 0% 100%, 100% 45%);
+	background: rgba(158, 158, 158, .12);
+	background-size: 50% 100%;
+	margin-left: 0 !important;
+}
+.contact-form-title .row{
+	width: 85%;
+}
+.contact-form-title h3{
+	font-family: 'Oswald';
+	font-size: 35px;
+	font-weight: 100;
+}
+.contact-form .field{
+	background: rgba(158, 158, 158, .12);
+	font-family: 'Oxygen';
+	height: 50px;
+	padding: 5px 10px 5px 10px;
+	border:solid rgba(0,0,0,.4) .5px;
+	border-radius: 3px;
+	width: 90%;
+}
+.contact-form label{
+	font-family: 'Oxygen';
+	color: rgba(0,0,0,.7);
+}
+.contact-form .msg-field{
+	width: 95%;
+	background: rgba(158, 158, 158, .12);
+	font-family: 'Oxygen';
+	border:solid rgba(0,0,0,.4) .5px;
+	border-radius: 3px;
+}
+
+.contact-form-submit-button{
+	background: transparent;
+	border:solid #00A8B1 .4px;
+	border-radius: 5px;
+	padding: 5px 15px 5px 15px;
+	font-size: 28px;
+	font-family: 'Oswald';
+	font-weight: 100;
+	color: #00A8B1;
+	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s;
+}
+.contact-form-submit-button:hover{
+	
+	color: white;
+	background: #00A8B1;
+	-webkit-transition: all 0.8s; 
+  	transition: all 0.8s; 
+}
+
+.contact-form-container .contact-us-title{
+	font-family: 'Oswald';
+	font-size: 30px;
+	font-weight: 100;
+	text-align: center;
+
+}
+
+
+/*-------------------------footer---------------------*/
+
+.footer-container{
+	clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+	height: 100%;
+	background: linear-gradient(166.73deg, #00A8B1 21.68%, rgba(0, 177, 158, 0) 208.36%);
+	color: white;
+	position: relative;
+	padding-top: 8%;
+	padding-bottom: 5%;
+
+}
+
+.footer-title{
+	font-family: 'Oswald';
+	font-weight: 100;
+	color: white;
+	font-size: 22px;
+}
+.agency-description{
+	
+	font-family: 'Oxygen';
+	font-weight: 100;
+	font-size: 16px;
+	color: rgba(255,255,255,.6);
+
+}
+
+.phone-info-container .icon{
+	background: url("/media/UI elements/SVGs/white-phone.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+}
+.fax-info-container .icon{
+	background: url("/media/UI elements/SVGs/white-fax.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+}
+.mail-info-container .icon{
+	background: url("/media/UI elements/SVGs/white-mail.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+}
+.adresse-container .icon{
+	background: url("/media/UI elements/SVGs/white-location.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+}
+
+.footer-container .info{
+	margin-left: 10px;
+	display: inline;
+	font-family: 'Oxygen';
+	font-size: 16px;
+	color: rgba(255,255,255,.6);
+}
+/*.footer-container .news-letter-container{
+	position: relative;
+}
+.footer-container .news-letter{
+	position: absolute;
+	bottom: 10%;
+}*/
+.footer-container .news-letter .news-letter-description{
+	font-weight: 100;
+	font-size: 16px;
+}
+
+.news-letter  button{
+	border:solid white 1px;
+	border-radius: 5px;
+	color: white;
+	font-family: 'Oswald';
+	font-size: 22px;
+	font-weight: 100;
+	letter-spacing: 2px;
+	padding:5px 20px 5px 20px;
+	background:transparent;
+	transition: all .4s;
+
+}
+.news-letter  button:hover{
+	background:white;
+	color: #00A8B1;
+
+}
+.news-letter input {
+	font-family: 'Oxygen';
+	padding:10px 20px 10px 20px;
+	border:solid white 1px;
+	border-radius: 5px;
+	color: #252525;
+}
+
+
+.social-media-info > div{
+	margin-left: 5%;
+}
+.social-media-info .social-media-icons:nth-child(1){
+	background: url("/media/UI elements/SVGs/white-facebook.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 50px;
+	height: 50px;
+
+}
+.social-media-info .social-media-icons:nth-child(2){
+	background: url("/media/UI elements/SVGs/white-instagram.svg");
+	background-repeat: no-repeat;
+	background-size: 115% 115%;
+	background-position: 50% 50%;
+	width: 50px;
+	height: 50px;
+}
+.social-media-info .social-media-icons:nth-child(3){
+	background: url("/media/UI elements/SVGs/white-twitter.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 50px;
+	height: 50px;
+}
+
+
+
+/*-----------------------------------------footers---------------------------------------*/
+.upper-footer-title{
+	font-family: 'Oswald';
+	font-size: 30px;
+	font-weight: 100;
+	color: rgba(255,255,255,.9);
+}
+.upper-footer-container{
+	background-color: #167E83;
+}
+.upper-footer-container > div{
+	
+	min-height: 150px;
+}
+.upper-footer-section:nth-child(2){
+	border-left:solid rgba(255,255,255,.4) 1px; 
+	border-right:solid rgba(255,255,255,.4) 1px; 
+}
+.upper-footer-section .icon{
+	width:40px;
+	height:40px;
+	
+	
+
+}
+.upper-footer-section .info{
+	color: rgba(255,255,255,.7);
+	font-family: 'Oxygen';
+	font-weight: 100;
+	font-size: 19px;
+}
+.footer-container.under-footer-container{
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+	background: rgba(0,168,177,.7);
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.footer-container.under-footer-container .contact-container .info{
+	color: white;
+	font-weight: bold;
+
+}
+.footer-container.under-footer-container .contact-container .info:hover{
+	text-decoration: underline;
+}
+
+
+
+
+
+/*-----------------------------------return-top---------------------------------*/
+
+
+.return-top{
+	text-decoration: none;
+	background-image: url("/media/UI elements/SVGs/return-top.svg");
+	background-color: #167E83;
+	background-size: 55% 55%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
+	border-radius: 50%;
+	transition: all .4s;
+}
+.return-top:hover{
+	background-color: rgba(0,168,177,.7);
+}
+
+
+
+/*-----------------------------------------MediaQueries-----------------------------------*/
+
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 992px){
+	
+
+	.landing{
+		background-size: cover;
+	}
+
+
+
+	/*-------------------------------------travelShowCaseMedia---------------------------------*/
+	.travel-showcase{
+		min-height: 300px;
+	}
+	.travel-showcase-title{
+
+	}
+
+
+	/*------------------------------------Section3Media--------------------------------*/
+
+
+	.section-3-title{
+		font-size: 35px;
+	}
+	.section-3-button{
+		font-size: 25px;
+	}
+	/*------------------------------------FooterMedia--------------------------------*/
+
+
+	.agency-description,.footer-container .info,.news-letter .news-letter-description{
+		font-size: 14px;
+	}
+	.footer-title{
+		font-size: 20px;
+	}
+	.footer-container .icon{
+		width: 25px;
+		height: 25px;
+	}
+	.footer-container .social-media-info .social-media-icons{
+		width: 35px;
+		height: 35px;
+	}
+	.news-letter  button{
+		font-size: 18px;
+	}
+	.news-letter input{
+		padding: 5px 10px 5px 10px;
+	}
+
+
+
+	.upper-footer-section .icon{
+		width:30px;
+		height:30px;
+	}
+	.upper-footer-title{
+		font-size: 25px;
+	}
+	.upper-footer-section .info{
+		font-size: 16px;
+	}
+	.upper-footer-container > div{
+		min-height: 100px;
+	}
+
+	
+}
+
+@media only screen and (min-width: 1200px){
+	
+	.testimonial-img{
+		height: 80px;
+		width: 80px;
+		border-radius: 50%;
+	}
+	.testimonials .person-name{
+		font-size: 24px;
+	}
+	.testimonials .person-badge{
+		font-size: 14px;
+	}
+	.testimonial-content{
+		font-size: 14px;
+	}
+
+	/*------------------------------------FooterMedia--------------------------------*/
+
+
+	.agency-description,.footer-container .info,.news-letter .news-letter-description{
+		font-size: 18px;
+	}
+	.footer-title{
+		font-size: 24px;
+	}
+
+
+	.upper-footer-section .icon{
+		width:50px;
+		height:50px;
+	}
+	.upper-footer-title{
+		font-size: 35px;
+	}
+	.upper-footer-section .info{
+		font-size: 22px;
+	}
+}
+
+@media only screen and (max-width: 580px){
+	/*-----------------------------LandingMedia-----------------------------*/
+
+	
+	.landing{
+		height: 400px;
+	}
+	.landing-title{
+		top: 20%;
+	}
+
+
+	.section-icons{
+		width: 55px;
+		height:60px;
+	}
+	.section-title{
+		font-size: 25px;
+	}
+	.section-content{
+		font-size: 14px;
+	}
+
+
+	.landing .part-1,.landing .part-2{
+		font-size: 40px;
+	}
+	.landing-button {
+		bottom: 20%;
+	}
+	.landing-button a{
+		font-size: 22px;
+	}
+
+	/*------------------------------OffersMedia----------------------------*/
+
+
+	.offers:nth-child(3n+1){
+		background:white;
+	}
+	.offers:nth-child(2n){
+		background:rgba(158, 158, 158, .12);
+	}
+	.offers .offer-desc{
+		font-size: 14px;
+		color: rgba(0,0,0,.7);
+	}
+	.offers-section-title{
+		font-size: 30px;
+	}
+	
+
+	.contact-form label{
+		font-size: 14px;
+	}
+	
+
+}
+
+@media only screen and (max-width: 480px) {
+  
+	/*-----------------------------LandingMedia-----------------------------*/
+
+
+	.landing{
+		height: 350px;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;	
+	}
+
+
+	/*-----------------------------Section2Media-----------------------------*/
+	.section-2{
+		min-height: 350px;
+	}
+	.section-2 .section-2-title{
+		font-size: 35px;
+	}
+	.section-2 .description{
+		font-size: 20px;
+	}
+	.section-2 .button-wrapper a{
+		font-size: 25px;
+	}
+
+	/*----------------------------TestimonialsMedia---------------------------*/
+
+	.testimonials-title{
+		font-size: 35px;
+	}
+	.testimonials .person-name{
+		font-size: 20px;
+	}
+	.testimonials .person-badge{
+		font-size: 12px;
+	}
+	.testimonial-content{
+		font-size: 12px;
+	}
+	.testimonials{
+		min-height: 200px;
+	}
+
+	
+}
+
+@media only screen and (max-width: 380px){
+	/*------------------------------travelShowCaseMedia-----------------------*/
+
+	.travel-showcase-title{
+		font-size: 28px;
+	}
+	.tours button{
+		font-size: 12px;
+	}
+	.travel-info-container .price{
+		font-size: 13px;
+	}
+	.travel-info-container .city-name{
+		font-size: 15px;
+	}
+
+	/*-----------------------------Section2Media-----------------------------*/
+
+	.section-2{
+		min-height: 350px;
+	}
+	.section-2 .section-2-title{
+		font-size: 26px;
+	}
+	.section-2 .description{
+		font-size: 16px;
+	}
+	.section-2 .button-wrapper a{
+		font-size: 20px;
+	}
+
+
+	/*----------------------------TestimonialsMedia---------------------------*/
+
+	.testimonial-img{
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+	}
+	.testimonials-title{
+		font-size: 28px;
+	}
+	.testimonials .person-name{
+		font-size: 18px;
+	}
+	.testimonials .person-badge{
+		font-size: 10px;
+	}
+	.testimonial-content{
+		font-size: 10px;
+	}
+
+	/*----------------------------------------Section3Media--------------------------------------*/
+
+
+	.section-3-title{
+		font-size: 30px;
+	}
+	.section-3-button{
+		font-size: 20px;
+	}
+}
+
+
+

@@ -1,0 +1,52 @@
+    
+
+    <div id="contact" class="contact-info-section container-fluid">
+      <h2  class="contact-info-section-title text-center my-5">Comment Nous Joindre ?</h2>
+      <div class="row">
+        
+
+          <div  class="contact-form about-us col-md-6 col-12 container-fluid px-md-5">
+            <h3 class="contact-us-title my-4 w-100">Contacter Nous</h3>
+            
+
+
+
+            <form>
+            {% csrf_token %}
+          <div class="row mt-3  ">
+            
+            <div class="col-6">
+              <label for="first_name">Nom</label><br>
+              <input class="field w-100" type="text" maxlength="20" name="first_name" id="name"><br>
+              <label class="mt-3" for="email">E-mail</label><br>
+              <input class="field w-100" type="email" name="email" id="email"><br>
+            </div>
+            <div class="col-6">
+              <label  for="last_name">Prénom</label><br>
+              <input class="field w-100" type="text" maxlength="20" name="last_name" id="last_name"><br>
+              <label class="mt-3" for="phone_number">Téléphone</label><br>
+              <input class="field w-100" type="number" maxlength="10" name="phone_number" id="phone"><br>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="msg-field-container col-12">
+              <label for="content">Message</label><br>
+              <textarea class="msg-field w-100" name="content" maxlength="500" id="msg" cols="30" rows="5">
+                
+              </textarea>
+            </div>
+          </div>
+          <div class="row justify-content-center my-3 ">
+            <button class="contact-form-submit-button mx-auto" type="submit" endpoint="{% url 'contact' %}">Envoyer</button>
+          </div>
+            
+          
+          </form>
+          </div>
+        
+        <div class="map-info col-md-6 col-12 p-0">
+          <div class="mapouter w-100"><div class="gmap_canvas w-100"><iframe class="w-100 h-100" id="gmap_canvas" src="https://maps.google.com/maps?q=bordj%20bou%20Arreridj%20rue%20dalsi%20abderrahmane&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div>
+        </div>
+      </div>
+    </div>
+    

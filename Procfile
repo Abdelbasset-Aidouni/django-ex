@@ -1,0 +1,1 @@
+web: gunicorn elbiban_tours.wsgi

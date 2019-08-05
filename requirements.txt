@@ -1,5 +1,10 @@
-django>=1.11,<1.12
 django-debug-toolbar==1.8
-gunicorn==19.4.5
-psycopg2==2.7.3.1
 whitenoise==3.3.1
+dj-database-url==0.5.0
+Django==2.2.2
+django-tracking2==0.5.0
+gunicorn==19.9.0
+Pillow==6.1.0
+psycopg2==2.8.3
+pytz==2019.1
+sqlparse==0.3.0

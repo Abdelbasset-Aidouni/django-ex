@@ -1,0 +1,148 @@
+.search-btn{
+	background-color: transparent;
+	border:none;
+	transition: all .5s;
+}
+.search-btn:hover{
+	transition: all .5s;
+	filter: brightness(0) saturate(100%) invert(12%) sepia(5%) saturate(5290%) hue-rotate(171deg) brightness(98%) contrast(84%);
+}
+.search-input{
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+.navigation-bar .search-input:focus{
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+
+
+.service-icon{
+filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%) hue-rotate(214deg) brightness(108%) contrast(102%);
+}
+.services-container{
+	
+}
+
+.service-inner-container{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	color: white;
+	
+}
+.service-container:nth-child(1) .service-inner-container{
+	background-color: #EE5353;
+}
+.service-container:nth-child(2) .service-inner-container{
+	background-color: #212F3E;
+}
+.service-container:nth-child(3) .service-inner-container{
+	background-color: #10AC84;
+}
+.service-container:nth-child(4) .service-inner-container{
+	background-color: #5F27CD;
+}
+.service-container:nth-child(5) .service-inner-container{
+	background-color: #569FFF;
+}
+.service-container:nth-child(6) .service-inner-container{
+	background-color: #FF9F43;
+}
+.service-container:nth-child(7) .service-inner-container{
+	background-color: #F368E0;
+}
+.service-container:nth-child(8) .service-inner-container{
+	background-color: #FF7676;
+	
+}
+.service-container:nth-child(9) .service-inner-container{
+	background-color: #5B247A;
+}
+.service-container:nth-child(10) .service-inner-container{
+	background-color: #184E68;
+}
+.service-container:nth-child(11) .service-inner-container{
+	background-color: #576574;
+}
+.service-container:nth-child(12) .service-inner-container{
+	background-color: #FCE38A;
+}
+.services-container-title{
+	font-size: 45px;
+	font-family: 'Oswald';
+	font-weight: 100;
+}
+.service-title{
+	font-family: 'Oswald';
+	font-weight: 100;
+	font-size: 25px;
+}
+.service-content .description{
+	font-size: 14px;
+}
+.service-container button{
+	font-family: 'Oswald';
+	font-weight: 100;
+	font-size: 16px;
+	padding:5px 10px 5px 10px;
+	background-color: transparent;
+	color: white;
+	border:solid white .5px;
+	border-radius: 5px;
+
+
+}
+.service-container button:hover{
+	background-color: white;
+	color:black;
+}
+
+
+
+		/*-------------------------------Media-Queries------------------------------------*/
+
+
+
+@media screen and (max-width: 1200px){
+	.service-title{
+		font-size: 22px;
+	}
+	.service-content .description{
+		font-size: 12px;
+	}
+	.service-container button{
+		font-size: 14px;
+	}
+}
+
+
+@media screen and (max-width: 992px){
+	
+}
+
+
+
+@media screen and (max-width: 580px){
+	
+}
+
+
+@media screen and (max-width: 480px){
+	
+}
+
+
+@media screen and (max-width: 380px){
+	.service-title{
+		font-size: 20px;
+	}
+	.service-content .description{
+		font-size: 10px;
+	}
+	.service-container button{
+		font-size: 11px;
+	}
+}

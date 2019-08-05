@@ -1,0 +1,106 @@
+{% load static %}
+{% url 'voyages' as voyage_link %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="/media/UI elements/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/media/UI elements/favicon.ico" type="image/x-icon" />
+    
+    
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abel|Oswald:200,300,400|Oxygen:300,400,700&display=swap" rel="stylesheet">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href={% static "slick/slick.css" %}/>
+    <link rel="stylesheet" type="text/css" href={% static "slick/slick-theme.css" %}/>
+    <!-- Cosumized CSS -->
+    <link rel="stylesheet" type="text/css" href={% static "css/main.css" %}>
+    <link rel="stylesheet" type="text/css" href={% static "css/modal.css" %}>
+    {% block head %}
+        
+    {% endblock head %}
+
+    <title>El Biban Tours</title>
+  </head>
+  <body>
+
+    {% block header %}
+        {% include "header.html" with voyage_link=voyage_link %}
+        
+        {% include "nav-bar.html" %}
+    {% endblock header %}
+
+    {% block content %}
+        {% include "landing.html"  with landing_image=landing_image%}
+        {% include "section-1.html" with services=services_1 %}
+        {% include "travel-showcase.html" with voyages_1=voyages_1 voyages_2=voyages_2 %}
+        {% include "section-2.html" %}
+        {% include "offers-section.html" with services=services_2 %}
+        {% include "testimonials.html" with feedbacks=feedbacks %}
+        {% include "section-3.html" %}
+        {% include "contact-form.html" %}
+        {% include "snippets/confirmation_modal.html" %}
+        {% include "snippets/modal.html" with modal_id="visa-modal" form_title="Reservation Visa" form=visa_form %}
+        {% include "snippets/modal.html" with modal_id="modal-1" form_title="Reservation Voyage" form=voyage_form %}
+        {% include "footer.html" %}
+    {% endblock content %}
+    <a href="#top" class="return-top contact-trigger">
+      
+    </a>
+        
+
+    
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
+    <script src={% static "js/modal_popup.js" %}></script>
+    <script src={% static "js/main.js" %}></script>
+    
+    
+
+    
+    <script>
+        $(function () {
+          $(document).scroll(function () {
+            var $nav = $(".navigation-bar");
+            
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+          });
+        });
+
+        
+        
+    </script>
+
+    {% block script %}
+        
+    {% endblock script %}
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+{% endblock head %}
+{% block content %}
+	{% include "about/landing.html" with image=landing_image%}
+	{% include "about/description-section.html" with info=info %}
+	{% include "about/services-section.html" with services=services %}
+	{% include "about/contact-info-section.html" %}
+	{% include "snippets/confirmation_modal.html" %}
+	{% include "about/double-footer.html" with info=info %}
+
+{% endblock content %}

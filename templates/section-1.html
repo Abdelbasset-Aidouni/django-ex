@@ -1,0 +1,27 @@
+{% load static %}
+<div class="section-1 container-fluid mt-5 pt-3">
+      <div class="row justify-content-around">
+        
+        {% for service in services %}
+
+
+          <div class="subsection-1 subsections col-lg-4 col-md-6 col-sm-12 container">
+            <div class="row justify-content-center">
+              <div class="section-icon-1 section-icons" style="background-image:url({{service.svg.url}});background-size:contain">
+              </div>
+              <h1 class="section-title w-100 text-center my-2">
+                {{service.designation}}
+              </h1>
+              <div class="section-content-1 section-content">
+                {{service.description}}
+              </div>
+            </div>
+          </div>
+
+
+        {% endfor %}
+        
+        
+        
+      </div>
+    </div>

@@ -1,0 +1,33 @@
+    <div class="costum-model-container" onclick="getTriggeredElement(this,event);">
+      <div id="{{modal_id}}" role="form" class="costum-modal container col-10 col-sm-8 col-md-5">
+        <div class="row justify-content-center">
+          <div class="costum-modal-header col-12 mb-4">
+            <div class="text-center">{{form_title}}<div class="close-icon modal-dismiss" modal="{{modal_id}}"></div></div>
+            
+          </div>
+          <form class="col-12 px-4">
+          <div class="costum-modal-body col-12 ">
+            
+              {% csrf_token %}
+            {{form}}  
+            
+            
+          </div>
+          <div class="costum-modal-footer col-6 offset-3 my-2">
+            <div class="row justify-content-around">
+              <button type="submit" class="costum-modal-btn costum-btn-primary" modal="{{modal_id}}" endpoint="">Confirmer</button>
+              <button class="costum-modal-btn costum-btn-secondary modal-dismiss" modal="{{modal_id}}">Annuler</button>  
+            </div>
+            
+          </div>
+          </form>
+        </div>
+        
+      </div>
+      <div class="costum-modal-spinner-container">
+        <div class="spinner-border text-info text-center costum-modal-spinner" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+
+      </div>
+          </div>

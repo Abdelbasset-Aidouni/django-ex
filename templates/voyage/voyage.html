@@ -1,0 +1,155 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/voyage.css' %}">
+    
+{% endblock head %}
+{% block content %}
+{% with host=request.META.HTTP_HOST scheme=request.scheme %}
+
+   <div class="voyages-upper-container mb-5">
+        {% if voyages %}
+            <h3 class="w-100 text-capitalize text-center my-3 voyage-container-title">Voyages</h3>
+            <hr class="w-75 text-center">    
+        {% endif %}
+        
+        {% if  not voyages %}
+                <div class="voyages-container container">
+                    <div class="row flex-wrap justify-content-center align-content-center" >
+                      
+                        
+                        <h4 class="not-found-msg">   
+                            il n'y a pas des voyages pour le moment, Contacter nous pour plus d'information
+                        </h4>
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+        
+        {% else %}
+        <div class="voyages-container container">
+            <div class="row flex-wrap justify-content-md-between justify-content-around">
+                {% for voyage in voyages %}
+                  
+                    <div  class="voyage-upper-container col-9 col-lg-3 col-md-4 col-sm-6">
+                        <div class=" voyage-container   mx-md-1">
+                           <div class="voyage-image" style="background-image:url({{voyage.image.url}})">
+                                <button class="modal-trigger" modal="modal-1" endpoint={{voyage.get_end_point}}>
+                                    Reserver Maintenant
+                                </button>
+                            </div>
+                            <div class="voyage-info-container container-fluid pt-3 pb-1">
+                                <div class="row justify-content-end pb-3 pr-2">
+                                    {% if voyage.availability == 'Disponible' %}
+                                        <span class="badge badge-success">{{voyage.availability}}</span>
+                                    {% else %}
+                                        <span class="badge badge-danger">{{voyage.availability}}</span>
+                                    {% endif %}
+                                    
+                                </div>
+                                <div class="row justify-content-between mx-2 ">
+                                    <span>{{voyage.destination}}</span><span>{{voyage.price}}DA</span>
+                                </div>
+                                <div class="row justify-content-between mx-2 ">
+                                    <span>Duré</span><span>15 Jours</span>
+                                </div>
+                                
+                            </div> 
+                        </div>
+                        
+                        
+                    </div>
+
+                {% endfor %}
+                
+                
+                
+                
+                
+            </div>
+            
+            
+        </div>
+        {% endif %}
+    </div>
+    {% if is_paginated %}
+        {% url 'voyages' as voyage_url %}
+        <nav aria-label="Page navigation" class="mb-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item {% if not voyages.has_previous  %}disabled{% endif %}">
+              <a class="page-link" href="{% if voyages.has_previous  %}
+                    {{scheme}}://{{host}}{{voyage_url}}?page={{ voyages.previous_page_number }}
+              {% endif %}" tabindex="-1">Précédent</a>
+            </li>
+            {% if  voyages.has_previous  %}
+                <li class="page-item "><a class="page-link" href="{{scheme}}://{{host}}{{voyage_url}}?page={{ voyages.previous_page_number }}">{{voyages.previous_page_number }}</a></li>
+            {% endif %}
+            
+            <li class="page-item active"><a class="page-link" href="{{scheme}}://{{host}}{{voyage_url}}?page={{ voyages.number }}">{{voyages.number}}</a></li>
+
+            
+            {% if  voyages.has_next  %}
+                <li class="page-item"><a class="page-link" href="{{scheme}}://{{host}}{{voyage_url}}?page={{ voyages.next_page_number }}">{{voyages.next_page_number}}</a></li>
+            {% endif %}
+            
+            <li class="page-item {% if not voyages.has_next  %}disabled{% endif %}">
+              <a class="page-link" href="{% if  voyages.has_next  %}
+                    {{scheme}}://{{host}}{{voyage_url}}?page={{ voyages.next_page_number }}
+              {% endif %}">Suivant</a>
+            </li>
+          </ul>
+        </nav>
+    {% endif %}
+     
+{% endwith %}
+    {% include "snippets/modal.html" with modal_id="modal-1" form_title="Remplissez le formulaire SVP" form=form %}
+    {% include "snippets/confirmation_modal.html" %}
+
+    {% include "about/double-footer.html" with info=info %}
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block script %}
+<script>
+    
+
+    $(document).ready(function(){
+
+      function getHeight(){
+            return $(window).height();
+        }
+        console.log($(".not-found-msg").parent());
+        let h = getHeight() * 0.8;
+        $(".not-found-msg").parent().css({"height":`${h}`});
+        
+        console.log(document.getElementsByClassName("not-found-msg")[0].parent());
+        
+
+    });
+</script>
+
+
+     
+{% endblock script %}
+
+

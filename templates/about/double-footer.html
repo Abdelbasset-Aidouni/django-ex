@@ -1,0 +1,127 @@
+	
+
+	<div class="upper-footer-container container-fluid">
+      <h2 class="upper-footer-title  pt-3 text-center">Restez en Contact </h2>
+      <div class="row h-100 align-content-center">
+        <div class="upper-footer-section col-md-4 container h-100">
+          <div class="phone-info-container my-3 row h-100 align-content-center ml-4 mx-lg-4">
+            <div class="icon mr-2">
+              
+            </div>
+            <div class="info my-auto">
+              {{info.phone_number}}
+            </div>
+          </div>
+        </div>
+        <div class="upper-footer-section col-md-4 container h-100">
+          <div class="mail-info-container my-3 row h-100 align-content-center ml-4 ml-md-0 mx-lg-1">
+            <div class="icon mr-2">
+              
+            </div>
+            <div class="info my-auto">
+              {{info.email}}
+            </div>
+          </div>
+        </div>
+        <div class="upper-footer-section container col-md-4 h-100">
+          <div class="adresse-container my-3 row h-100 align-content-center ml-4 ml-md-1 mx-lg-1">
+            <div class="icon mr-2">
+              
+            </div>
+            <div class="info my-auto">
+                {{info.location}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-container under-footer-container container-fluid">
+        <div class="row justify-content-around mb-5 flex-wrap">
+          <div class="col-md-3 col-10 my-2">
+            <h3 class="footer-title">El Biban Tours</h3>
+            <div class="agency-description mt-5">
+              {{info.agency_description}}
+            </div>
+          </div>
+          <div class="col-md-3 col-10 my-2">
+            <h3 class="footer-title">Liens Rapide</h3>
+            <div class="contact-container container">
+              <div class="my-3 row">
+                <a href="{% url 'home' %}" class="info">
+                  Home
+                </a>
+              </div>
+
+              <div class=" my-3 row">
+                {% url 'about' as about %}
+                <a href="{% ifnotequal request.path about   %}{% url 'home' %}{% endifnotequal %}#contact" class="info contact-trigger">
+                   Contact
+                </a>
+              </div>
+              <div  class=" my-3 row">
+                <a href="{% url 'services' %}" class="info">
+                  Services
+                </a>
+              </div>
+              <div  class=" my-3 row">
+                <a href="{% url 'voyages' %}" class="info">
+                  Voyages
+                </a>
+              </div>
+              <div  class=" my-3 row">
+                <a href="{% url 'about' %}" class="info text-capitalize">
+                  à Propos
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="news-letter-container col-md-3 col-10 my-2">
+            <h3 class="footer-title ml-2">News Letter</h3>
+            <div class="news-letter  ">
+                <div class="container-fluid">
+                  <div class="news-letter-description info row justify-content-start">
+                    <p>Subscribe to our newsletter to stay up to date about new opportunites</p>
+                  </div>
+                  <div class="news-letter-form row mx-1">
+                    <form>
+                      {% csrf_token %}
+                      <input class="w-100 my-2" name="email" type="email" placeholder="your email">
+                      <button type="submit" class="w-100" endpoint='{% url "newsletter" %}'>Souscrire</button>
+                    </form>
+                  </div>
+                  
+                </div>
+            </div>
+          </div>
+        </div>
+        <hr style="color: rgba(255,255,255,1);width:80%;text-align: center;">
+        <div class="row social-media-info justify-content-start mt-3">
+          <div class="container col-sm-3 col-8">
+            <div class="row justify-content-around">
+              <a href="{{info.facebook_link}}" target="_blank" class="social-media-icons">
+            
+              </a>
+              <a href="{{info.twitter_link}}" target="_blank" class="social-media-icons">
+                
+              </a>
+              <a href="{{info.instagram_link}}" target="_blank" class="social-media-icons">
+                
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      
+      
+    </div>

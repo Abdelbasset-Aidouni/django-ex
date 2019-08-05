@@ -1,0 +1,20 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_3" y="79" x="132" width="21" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#000000" height="21" fill="none"/>
+  <rect id="svg_4" y="79" x="92" width="21" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#000000" height="21" fill="none"/>
+  <rect id="svg_5" y="116" x="132" width="21" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#000000" height="21" fill="none"/>
+  <rect id="svg_6" y="116" x="92" width="21" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#000000" height="21" fill="none"/>
+  <rect id="svg_7" y="152" x="132" width="21" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#000000" height="21" fill="none"/>
+  <rect id="svg_8" y="152" x="92" width="21" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#000000" height="21" fill="none"/>
+  <polyline id="svg_9" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#000000" points="    139,228 139,195 106,195 106,228   " fill="none"/>
+  <path id="svg_10" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#000000" fill="none" d="m168,62.132c0,-1.656 -0.759,-3.132 -2.415,-3.132l-85,0c-1.656,0 -3.585,1.476 -3.585,3.132l0,175c0,1.656 1.887,2.868 3.543,2.868l84.979,0.889c1.656,0 2.479,1.111 2.479,-0.889l0,-177.868l-0.001,0z"/>
+  <path id="svg_11" stroke-width="3" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#000000" fill="none" d="m182.189,174.222c2.251,-0.473 4.585,-0.722 6.976,-0.722c18.64,0 33.75,15.11 33.75,33.75s-15.11,33.75 -33.75,33.75c-2.33,0 -4.604,-0.236 -6.802,-0.686"/>
+  <polyline id="svg_12" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#000000" points="   207,210 185,210 185,190  " fill="none"/>
+ </g>
+</svg>

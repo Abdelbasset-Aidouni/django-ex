@@ -1,0 +1,39 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_2" y="80" x="155" width="21" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" height="21" fill="none"/>
+  <rect id="svg_3" y="80" x="115" width="21" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" height="21" fill="none"/>
+  <rect id="svg_4" y="117" x="155" width="21" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" height="21" fill="none"/>
+  <rect id="svg_5" y="117" x="115" width="21" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" height="21" fill="none"/>
+  <rect id="svg_6" y="153" x="155" width="21" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" height="21" fill="none"/>
+  <rect id="svg_7" y="153" x="115" width="21" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" height="21" fill="none"/>
+  <polyline id="svg_8" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" points="   162,229 162,196 129,196 129,229  " fill="none"/>
+  <rect id="svg_10" y="104" x="227" width="19" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" height="19" fill="none"/>
+  <rect id="svg_11" y="138" x="227" width="19" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" height="19" fill="none"/>
+  <rect id="svg_12" y="171" x="227" width="19" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" height="18" fill="none"/>
+  <path id="svg_13" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" fill="none" d="m203,241l52.807,0c1.487,0 2.193,-1.706 2.193,-3.193l0,-8.307l0,-149.307c0,-1.487 -0.706,-2.193 -2.193,-2.193l-52.807,0"/>
+  <polyline id="svg_14" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" points="    203,189 211,189 211,171 203,171   " fill="none"/>
+  <rect id="svg_15" y="201" x="227" width="19" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" height="18" fill="none"/>
+  <polyline id="svg_16" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" points="    203,219 211,219 211,201 203,201   " fill="none"/>
+  <polyline id="svg_17" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" points="    203,157 211,157 211,138 203,138   " fill="none"/>
+  <polyline id="svg_18" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" points="    203,123 211,123 211,104 203,104   " fill="none"/>
+  <rect id="svg_20" y="119" x="50" width="16" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" height="16" fill="none"/>
+  <rect id="svg_21" y="148" x="50" width="16" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" height="16" fill="none"/>
+  <rect id="svg_22" y="177" x="50" width="16" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" height="15" fill="none"/>
+  <path id="svg_23" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" fill="none" d="m87,241l-43.958,0c-1.282,0 -4.042,-2.622 -4.042,-3.903l0,-135.875c0,-1.283 2.759,-1.222 4.042,-1.222l44.958,0"/>
+  <polyline id="svg_24" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" points="    88,192 80,192 80,177 88,177   " fill="none"/>
+  <rect id="svg_25" y="202" x="50" width="16" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" height="16" fill="none"/>
+  <polyline id="svg_26" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" points="    87,218 80,218 80,202 87,202   " fill="none"/>
+  <polyline id="svg_27" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" points="    88,164 80,164 80,148 87,148   " fill="none"/>
+  <polyline id="svg_28" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" points="    87,135 80,135 80,119 88,119   " fill="none"/>
+  <path id="svg_29" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" fill="none" d="m191,63c0,-1.657 -1.343,-3 -3,-3l-85,0c-1.657,0 -3,1.343 -3,3l0,175c0,1.657 1.343,3 3,3l85,0c1.657,0 3,0.657 3,-1l0,-177z"/>
+  <line id="svg_30" y2="60" y1="60" x2="199" x1="92" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" fill="none"/>
+  <line id="svg_31" y2="100" y1="100" x2="88" x1="32" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" fill="none"/>
+  <line id="svg_32" y2="78" y1="78" x2="264" x1="208" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#0fffff" fill="none"/>
+ </g>
+</svg>

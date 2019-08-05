@@ -1,0 +1,16 @@
+    <div class="services-section">
+      <h2 class="services-section-title my-5">Nos Services</h2>
+      <div class="services-elements-container container ">
+        <div class="row services-carousel col-10 col-xs-12 col-md-12 mx-auto">
+          {% for service in services %}
+            <div class="service-element-container container col-md-3 my-4">
+              <div class="row justify-content-center mx-2">
+                <div class="service-element-icon" style="background-image:url('{{service.svg.url}}')"></div>
+                <div class="service-element-title mt-2 w-100">{{service.designation}}</div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        
+      </div>
+    </div>

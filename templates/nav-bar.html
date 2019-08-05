@@ -1,0 +1,48 @@
+{% url 'about' as about %}
+{% url 'home' as home %}
+{% url 'voyages' as voyages %}
+{% url 'services' as services %}
+{% with request.path as absPath %}
+    
+
+<div class="navigation-bar navbar navbar-expand-lg navbar-light">
+    <a href="{% url 'home' %}" class="navbar-brand nav-logo d-lg-none">
+      
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+       <div class="collapse navbar-collapse " id="navbarToggler">
+      <ul class="navbar-nav nav">
+        <li class="nav-item {% ifequal absPath home  %}active{% endifequal %}">
+          <a class="nav-link" href="{{home}}">accueil</a>
+        </li>
+        <li class="nav-item {% ifequal absPath voyages  %}active{% endifequal %}">
+          <a class="nav-link" href="{{voyages}}">voyages</a>
+        </li>
+        <li class="nav-item {% ifequal absPath services  %}active{% endifequal %}">
+          <a class="nav-link" href="{{services}}">nos services</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link contact-trigger" href="{% ifnotequal absPath about   %}{% ifnotequal absPath home  %}{% url 'home' %}{%endifnotequal %}{% endifnotequal %}#contact">contact</a>
+        </li>
+        <li class="nav-item {% ifequal absPath about  %}active{% endifequal %}">
+          <a class="nav-link" href="{{about}}">à propos</a>
+        </li>
+      </ul>
+    </div>
+      {% ifnotequal request.path home  %}
+        {% ifnotequal request.path about  %}
+          <div class="row justify-content-end d-none d-lg-flex" style="flex-grow: 1">
+            <form class="form-inline my-2 my-lg-0">
+              <input class=" search-input form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="search-btn my-2 my-sm-0" type="submit"><img src="/media/UI elements/SVGs/search.svg" width="40" height="50" alt=""></button>
+            </form>
+          </div>
+        {% endifnotequal %}
+      {% endifnotequal %}
+      
+      
+    </div>
+    {% endwith %}

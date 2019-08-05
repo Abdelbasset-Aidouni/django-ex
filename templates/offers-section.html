@@ -1,0 +1,22 @@
+<div class="offers-section-container container-fluid">
+      <h1 class="offers-section-title w-100 text-center text-capitalize">Nos Offres</h1>
+      <div class="row">
+        {% for service in services %}
+           <div class="offer-1 offers col-md-6 col-sm-12 container-fluid py-5">
+            <div class="row justify-content-center">
+              <div class="offer-icon m-3" style="background-image:url({{service.svg.url}});">
+                
+              </div>
+              <h1 class="offer-title w-100 text-capitalize text-center">{{service.designation}}</h1>
+              <div class="offer-desc col-md-10 text-center">
+                {{service.description}}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+       
+        
+        
+      </div>
+      
+    </div>

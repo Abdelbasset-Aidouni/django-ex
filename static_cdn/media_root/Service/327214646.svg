@@ -1,0 +1,17 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_2" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#3ad8d8" fill="none" d="m225.646,137l-149.92,0c-16.693,0 -31.726,12.269 -31.726,28.962l0,43.525c0,2.003 3.124,4.513 5.127,4.513l203.118,0c2.004,0 2.755,-2.51 2.755,-4.513l0,-43.525c0,-16.693 -12.661,-28.962 -29.354,-28.962z"/>
+  <path id="svg_3" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#3ad8d8" fill="none" d="m255,176.627c0,-2.003 -1.624,-3.627 -3.627,-3.627l-203.746,0c-2.003,0 -3.627,1.624 -3.627,3.627l0,33.746c0,2.003 1.624,3.627 3.627,3.627l203.746,0c2.003,0 3.627,-1.624 3.627,-3.627l0,-33.746z"/>
+  <path id="svg_4" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#3ad8d8" fill="none" d="m237,126l0,-54.343c0,-2.003 -0.887,-2.657 -2.891,-2.657l-166.846,0c-2.003,0 -4.263,0.654 -4.263,2.657l0,54.343"/>
+  <line id="svg_5" y2="231" y1="195" x2="44" x1="44" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#3ad8d8" fill="none"/>
+  <line id="svg_6" y2="231" y1="195" x2="255" x1="255" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#3ad8d8" fill="none"/>
+  <path id="svg_7" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#3ad8d8" fill="none" d="m199.539,125.908c0,-8.987 1.927,-18.451 1.927,-18.451c0,-1.595 -1.294,-3.046 -2.89,-3.046c0,0 -8.986,1.846 -17.812,1.846c-8.826,0 -18.774,-1.965 -18.774,-1.965c-1.597,0 -2.891,1.273 -2.891,2.869c0,0 1.927,9.128 1.927,18.757"/>
+  <path id="svg_8" stroke-width="6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#3ad8d8" fill="none" d="m140.346,125.908c0,-8.987 1.926,-18.451 1.926,-18.451c0,-1.595 -1.294,-3.046 -2.889,-3.046c0,0 -8.987,1.846 -17.812,1.846c-8.827,0 -18.775,-1.965 -18.775,-1.965c-1.597,0 -2.889,1.273 -2.889,2.869c0,0 1.925,9.128 1.925,18.757"/>
+ </g>
+</svg>

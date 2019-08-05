@@ -1,0 +1,90 @@
+<div class="footer-container container-fluid">
+      
+        <div class="row justify-content-around mb-5 flex-wrap">
+          <div class="col-md-3 col-10 my-2 mt-5 mt-md-2">
+            <h3 class="footer-title">El Biban Tours</h3>
+            <div class="agency-description mt-5">
+              {{info.agency_description}}
+            </div>
+          </div>
+          <div class="col-md-4 col-10 my-2">
+            <h3 class="footer-title">Contact</h3>
+            <div class="contact-container container">
+              <div class="phone-info-container my-3 row">
+                <div class="icon">
+                  
+                </div>
+                <div class="info">
+                  {{info.phone_number}}
+                </div>
+              </div>
+              <div class="fax-info-container my-3 row">
+                <div class="icon">
+                  
+                </div>
+                <div class="info">
+                   {{info.fax_number}}
+                </div>
+              </div>
+              <div class="mail-info-container my-3 row">
+                <div class="icon">
+                  
+                </div>
+                <div class="info">
+                  {{info.email}}
+                </div>
+              </div>
+            </div>
+            <h3 class="footer-title">Adresse</h3>
+            <div class="adresse-container container my-3">
+              <div class="row">
+                <div class="icon">
+                  
+                </div>
+                <div class="info">
+                    {{info.location}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-letter-container col-md-4 col-10 my-2">
+            <h3 class="footer-title ml-3">News Letter</h3>
+            <div class="news-letter container h-100">
+              <div class="row h-100 align-content-center">
+                <div class="container-fluid">
+                  <div class="news-letter-description info row justify-content-start">
+                    <p>Subscribe to our newsletter to stay up to date about new opportunites</p>
+                  </div>
+                  <div class="news-letter-form row mx-1">
+                    <form>
+                      {% csrf_token %}
+                      <input class="w-100 my-2" name="email" type="email" placeholder="your email">
+                      <button type="submit" class="w-100" endpoint='{% url "newsletter" %}'>Souscrire</button>
+                    </form>
+                  </div>
+                  
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row social-media-info justify-content-start ">
+          <div class="container col-sm-3 col-6">
+            <div class="row justify-content-around">
+              <a href="{{info.facebook_link}}" target="_blank" class="social-media-icons">
+            
+              </a>
+              <a href="{{info.twitter_link}}" target="_blank" class="social-media-icons">
+                
+              </a>
+              <a href="{{info.instagram_link}}" target="_blank" class="social-media-icons">
+                
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      
+      
+    </div>
